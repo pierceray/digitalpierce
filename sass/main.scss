@@ -1,22 +1,7 @@
-$legacy-support-for-ie8: true;
-
+@import "settings";
 @import "compass";
 @import "normalize";
 
-$default-border-radius : 2em;
-$default-rotate : 5deg;
-
-
-$white : #FFF;
-$black : #000;
-$red : #F00;
-$highlight : #b3d4fc;
-$gray : #222;
-$light-gray : #CCC;
-$link-color : #0000CD;
-
-$base-font-size : 13px;
-$base-line-height : 1.231;
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -212,9 +197,7 @@ footer {
 }
 
 .shadow {
-    -moz-box-shadow:    .23em .23em .38em .46em $light-gray;
-    -webkit-box-shadow: .23em .23em .38em .46em $light-gray;
-    box-shadow:         .23em .23em .38em .46em $light-gray;
+    @include single-box-shadow($light-gray, .23em, .23em, .38em, .46em);
 }
 
 /* ==========================================================================
