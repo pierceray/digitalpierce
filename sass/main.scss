@@ -1,10 +1,7 @@
-@white: #FFF;
-@black: #000;
-@red: #F00;
-@highlight: #b3d4fc;
-@gray: #222;
-@light-gray: #CCC;
-@link-color: #0000CD;
+@import "settings";
+@import "compass";
+@import "normalize";
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -15,12 +12,12 @@ button,
 input,
 select,
 textarea {
-    color: @gray;
+    color: $gray;
 }
 
 body {
-    font-size: 13px;
-    line-height: 1.231;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
 }
 
 /*
@@ -30,12 +27,12 @@ body {
  */
 
 ::-moz-selection {
-    background: @highlight;
+    background: $highlight;
     text-shadow: none;
 }
 
 ::selection {
-    background: @highlight;
+    background: $highlight;
     text-shadow: none;
 }
 
@@ -47,7 +44,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid @light-gray;
+    border-top: 1px solid $light-gray;
     margin: 1em 0;
     padding: 0;
 }
@@ -84,8 +81,8 @@ textarea {
 
 .chromeframe {
     margin: 0.2em 0;
-    background: @light-gray;
-    color: @black;
+    background: $light-gray;
+    color: $black;
     padding: 0.2em 0;
 }
 
@@ -95,29 +92,12 @@ textarea {
 
 
 /* ==========================================================================
-   Mixins
-   ========================================================================== */
-.border-radius (@radius: 2em) {
-    border-radius: @radius;
-    -moz-border-radius: @radius;
-    -webkit-border-radius: @radius;
-}
-
-.transform-rotate (@degrees: 5deg) {
-    -webkit-transform: rotate(@degrees);
-    -moz-transform: rotate(@degrees);
-    -ms-transform: rotate(@degrees);
-    -o-transform: rotate(@degrees);
-    transform: rotate(@degrees);
-}
-
-/* ==========================================================================
    Styles
    ========================================================================== */
 
 
 body {
-    background-color: @white;
+    background-color: $white;
 }
    
  #container {
@@ -125,11 +105,11 @@ body {
  }
 
 .sticker {
-    background-color: @red;
-    border: .31em solid @white;
-    .border-radius;
-    .transform-rotate;
-    color: @white;
+    background-color: $red;
+    border: .31em solid $white;
+    @include border-radius;
+    @include rotate;
+    color: $white;
     width: 21em;
     height: 12em;
     padding: 1em 0 2em 0;
@@ -157,8 +137,8 @@ body {
 }
 
 .stickerbody {
-    background-color: @white;
-    color: @black;
+    background-color: $white;
+    color: $black;
     font-family: 'Loved by the King', cursive;
     font-size: 1.8em;
     padding: .2em;
@@ -170,9 +150,9 @@ body {
 
     a {
         text-decoration: none;
-        color: @black;
+        color: $black;
         float: right;
-        .transform-rotate (10deg);
+        @include rotate(10deg);
     }
 
     a:hover, a:active  {
@@ -182,11 +162,11 @@ body {
 }
 
 #firstName {
-    .transform-rotate (-10deg);
+    @include rotate(-10deg);
 }
 
 #lastname {
-    .transform-rotate;
+    @include rotate;
 }
 
 
@@ -199,7 +179,7 @@ body {
         display: inline;
     }
     a, a:active, a:visited{
-        color: @link-color;
+        color: $link-color;
         text-decoration: none;
         font-size: 1.5em;
         padding: 0 .5em;
@@ -217,9 +197,7 @@ footer {
 }
 
 .shadow {
-    -moz-box-shadow:    .23em .23em .38em .46em @light-gray;
-    -webkit-box-shadow: .23em .23em .38em .46em @light-gray;
-    box-shadow:         .23em .23em .38em .46em @light-gray;
+    @include single-box-shadow($light-gray, .23em, .23em, .38em, .46em);
 }
 
 /* ==========================================================================
@@ -336,8 +314,8 @@ footer {
         height: 15em;
     }
     .stickerbody {
-        background-color: @white;
-        color: @black;
+        background-color: $white;
+        color: $black;
         font-family: 'Loved by the King', cursive;
         font-size: 2.47em;
         padding: .2em;
@@ -354,7 +332,7 @@ footer {
 
         li:after {
             content: "|";
-            color: @link-color;
+            color: $link-color;
             font-size: 1.25em;
         }
 
@@ -363,7 +341,7 @@ footer {
         }
 
         a, a:active, a:visited{
-            color: @link-color;
+            color: $link-color;
             text-decoration: none;
             font-size: 1.25em;
             padding: 0 1em;
@@ -383,7 +361,7 @@ footer {
 @media print {
     * {
         background: transparent !important;
-        color: @black !important; /* Black prints faster: h5bp.com/s */
+        color: $black !important; /* Black prints faster: h5bp.com/s */
         box-shadow:none !important;
         text-shadow: none !important;
     }
