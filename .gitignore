@@ -1,7 +1,7 @@
 # Include your project-specific ignores in this file
 /.sass-cache
 compass_app_log.txt
-/css
+/src/css
 node_modules
 build
 
