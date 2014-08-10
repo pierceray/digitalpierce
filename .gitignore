@@ -1,8 +1,6 @@
-# Include your project-specific ignores in this file
-/.sass-cache
-compass_app_log.txt
-/src/css
-node_modules
-build
-
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+.sass-cache
+.grunt
+node_modules/
+dist/
+src/img/sprites
+*.css*

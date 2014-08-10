@@ -1,36 +1,125 @@
+@import "settings";
 @import "compass";
+@import "normalize";
 
-@import "partials/settings";
-@import "partials/normalize";
-@import "partials/browser-upgrade.scss";
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: $gray;
+}
+
+body {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: $highlight;
+    text-shadow: none;
+}
+
+::selection {
+    background: $highlight;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $light-gray;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: $light-gray;
+    color: $black;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
 
 /* ==========================================================================
    Styles
    ========================================================================== */
 
+
 body {
     background-color: $white;
 }
-
-#container {
+   
+ #container {
     margin: 0 auto;
-}
+ }
 
 .sticker {
     background-color: $red;
-    border: 0.31em solid $white;
+    border: .31em solid $white;
     @include border-radius;
     @include rotate;
     color: $white;
     width: 21em;
-    height: 15em;
+    height: 12em;
     padding: 1em 0 2em 0;
     margin: 3em auto;
 }
 
 .stickertitle {
-    margin: 0;
+    margin:0;
     padding: 0;
+
     span {
         display: block;
         text-align: center;
@@ -53,19 +142,23 @@ body {
     font-family: 'Loved by the King', cursive;
     font-size: 1.8em;
     padding: .2em;
+
     h1 {
         margin: 0;
         padding-left: .5em;
     }
+
     a {
         text-decoration: none;
         color: $black;
         float: right;
         @include rotate(10deg);
     }
-    a:hover, a:active {
+
+    a:hover, a:active  {
         text-decoration: underline;
     }
+
 }
 
 #firstName {
@@ -76,14 +169,16 @@ body {
     @include rotate;
 }
 
+
 .horiznav {
     padding: 0;
     list-style: none;
     text-align: center;
+
     li {
         display: inline;
     }
-    a, a:active, a:visited {
+    a, a:active, a:visited{
         color: $link-color;
         text-decoration: none;
         font-size: 1.5em;
@@ -94,6 +189,7 @@ body {
     }
 }
 
+
 footer {
     max-width: 30em;
     padding-left: 1.5em;
@@ -101,7 +197,7 @@ footer {
 }
 
 .shadow {
-    @include single-box-shadow($light-gray, 0.23em, 0.23em, 0.38em, 0.46em);
+    @include single-box-shadow($light-gray, .23em, .23em, .38em, .46em);
 }
 
 /* ==========================================================================
@@ -188,10 +284,8 @@ footer {
 
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .clearfix:after {
@@ -217,7 +311,7 @@ footer {
     /* Style adjustments for viewports that meet the condition */
     .sticker {
         width: 30em;
-        height: 18em;
+        height: 15em;
     }
     .stickerbody {
         background-color: $white;
@@ -226,29 +320,107 @@ footer {
         font-size: 2.47em;
         padding: .2em;
     }
+
     .horiznav {
         padding: 0;
         list-style: none;
         text-align: center;
+
         li {
             display: inline;
         }
+
         li:after {
             content: "|";
             color: $link-color;
             font-size: 1.25em;
         }
+
         li:last-child:after {
             content: "";
         }
-        a, a:active, a:visited {
+
+        a, a:active, a:visited{
             color: $link-color;
             text-decoration: none;
             font-size: 1.25em;
             padding: 0 1em;
         }
+
         a:active, a:hover {
             text-decoration: underline;
         }
+    }
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: $black !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
     }
 }
