@@ -1,7 +1,9 @@
 @import "compass";
+@import "bourbon/bourbon";
 
 @import "partials/settings";
 @import "partials/normalize";
+@import "partials/helpers";
 @import "partials/browser-upgrade.scss";
 
 /* ==========================================================================
@@ -19,8 +21,8 @@ body {
 .sticker {
     background-color: $red;
     border: 0.31em solid $white;
-    @include border-radius;
-    @include rotate;
+    border-radius: 2em;
+    transform: rotate(5deg);
     color: $white;
     width: 21em;
     height: 15em;
@@ -48,6 +50,7 @@ body {
 }
 
 .stickerbody {
+    @extend %clearfix;
     background-color: $white;
     color: $black;
     font-family: 'Loved by the King', cursive;
@@ -61,7 +64,7 @@ body {
         text-decoration: none;
         color: $black;
         float: right;
-        @include rotate(10deg);
+        transform: rotate(10deg);
     }
     a:hover, a:active {
         text-decoration: underline;
@@ -69,14 +72,15 @@ body {
 }
 
 #firstName {
-    @include rotate(-10deg);
+    transform: rotate(-10deg);
 }
 
 #lastname {
-    @include rotate;
+    transform: rotate(5deg);
 }
 
 .horiznav {
+    @extend %clearfix;
     padding: 0;
     list-style: none;
     text-align: center;
@@ -101,117 +105,8 @@ footer {
 }
 
 .shadow {
-    @include single-box-shadow($light-gray, 0.23em, 0.23em, 0.38em, 0.46em);
+    box-shadow: 0.25em 0.25em 1em 0.125em $light-gray;
 }
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
@@ -220,11 +115,7 @@ footer {
         height: 18em;
     }
     .stickerbody {
-        background-color: $white;
-        color: $black;
-        font-family: 'Loved by the King', cursive;
         font-size: 2.47em;
-        padding: .2em;
     }
     .horiznav {
         padding: 0;
