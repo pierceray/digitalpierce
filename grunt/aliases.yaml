@@ -7,22 +7,18 @@ test:
 build:
 - 'clean:dist'
 - 'jshint'
-- 'imagemin:static'
-- 'compass:dist'
+- 'sass:dist'
 - 'autoprefixer:dist'
-- 'uglify'
 - 'copy'
-- 'imagemin:distdynamic'
 
 deploy:
 - 'build'
 - 'gh-pages'
 
 server:
-- 'imagemin:static'
-- 'compass:dev'
+- 'clean:dev'
+- 'sass:dev'
 - 'autoprefixer:dev'
-- 'imagemin:devdynamic'
 - 'connect:dev'
 - 'open:dev'
 - 'watch'
