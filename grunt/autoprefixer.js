@@ -5,11 +5,11 @@ module.exports = {
 		dev: {
 			expand: true,
 			src: 'src/css/*.css',
-			dest: 'src/css/'
+			dest: '.'
 		},
 		dist: {
 			expand: true,
 			src: 'dist/css/*.css',
-			dest: 'dist/css/'
+			dest: '.'
 		}
 	};

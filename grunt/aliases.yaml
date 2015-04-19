@@ -10,6 +10,7 @@ build:
 - 'sass:dist'
 - 'autoprefixer:dist'
 - 'copy'
+- 'cssmin:dist'
 
 deploy:
 - 'build'
