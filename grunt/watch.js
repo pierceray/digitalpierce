@@ -24,7 +24,7 @@ module.exports = {
 			'src/sass/**/*.scss'
 		],
 		tasks: [
-			'compass:dev',
+			'sass:dev',
 			'autoprefixer:dev'
 		],
 		options: {
