@@ -21,11 +21,18 @@ body {
     border: 0.31em solid $white;
     border-radius: 2em;
     color: $white;
-    height: 15em;
+    height: 10em;
     margin: 3em auto;
-    padding: 1em 0 2em 0;
+    padding: 0 0 2em 0;
     transform: rotate(5deg);
-    width: 21em;
+    width: 16em;
+
+    @media only screen and (min-width: 35em) {
+        /* Style adjustments for viewports that meet the condition */
+        width: 30em;
+        height: 16em;
+        padding: 1em 0 2em 0;
+    }
 }
 
 .stickertitle {
@@ -38,13 +45,21 @@ body {
 }
 
 #hello {
-    font-size: 2.3em;
-    font-weight: bold;
     text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+
+    @media only screen and (min-width: 35em){
+        font-size: 2.3em;
+    }
 }
 
 #mynameis {
-    font-size: 1.9em;
+    font-size: 1.7em;
+
+    @media only screen and (min-width: 35em){
+        font-size: 1.9em;
+    }
 }
 
 .stickerbody {
@@ -54,9 +69,14 @@ body {
     font-family: 'Loved by the King', cursive;
     font-size: 1.8em;
     padding: .2em;
+    text-align: center;
+
+    @media only screen and (min-width: 35em) {
+        font-size: 2.47em;
+    }
+
     h1 {
         margin: 0;
-        padding-left: .5em;
     }
 }
 
@@ -73,14 +93,41 @@ body {
     padding: 0;
     list-style: none;
     text-align: center;
+
     li {
         display: inline;
+
+        &:after {
+            @media only screen and (min-width: 35em) {
+                content: "|";
+                color: $link-color;
+                font-size: 1.25em;
+            }
+        }
+
+        &:last-child:after{
+            @media only screen and (min-width: 35em) {
+                content: "";
+            }
+        }
     }
+
     a {
         color: $link-color;
-        text-decoration: none;
-        font-size: 1.5em;
+        font-size: 1.25em;
+        line-height: 1.75em;
         padding: 0 .5em;
+        text-decoration: none;
+
+        @media only screen and (min-width: 23em) {
+            font-size: 1.5em;
+        }
+
+        @media only screen and (min-width: 35em) {
+            line-height: 1.5em;
+            padding: 0 1em;
+        }
+
         &:active, &:hover {
             text-decoration: underline;
         }
@@ -97,27 +144,3 @@ footer {
     box-shadow: 0.25em 0.25em 1em 0.125em $light-gray;
 }
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-    .sticker {
-        width: 30em;
-        height: 18em;
-    }
-    .stickerbody {
-        font-size: 2.47em;
-    }
-    .horiznav {
-        li:after {
-            content: "|";
-            color: $link-color;
-            font-size: 1.25em;
-        }
-        li:last-child:after {
-            content: "";
-        }
-        a {
-            font-size: 1.25em;
-            padding: 0 1em;
-        }
-    }
-}
