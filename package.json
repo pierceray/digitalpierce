@@ -2,7 +2,9 @@
   "name": "digitalpierce.com",
   "version": "0.0.4",
   "description": "digitalpierce.com website",
-  "scripts": {},
+  "scripts": {
+    "test": "grunt test"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/pierceray/digitalpierce.com.git"
