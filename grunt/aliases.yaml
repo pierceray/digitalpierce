@@ -3,6 +3,7 @@ default:
 
 test:
 - 'jshint'
+- 'build'
 
 build:
 - 'clean:dist'
