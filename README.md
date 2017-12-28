@@ -1,3 +1,7 @@
+# Digitalpierce.com
+
+[![Build Status](https://travis-ci.org/pierceray/digitalpierce.com.svg?branch=master)](https://travis-ci.org/pierceray/digitalpierce.com)
+
 ## Installation
 run `npm install` to install the dependencies
 
