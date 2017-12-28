@@ -1,5 +1,7 @@
 # Digitalpierce.com
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pierceray/digitalpierce.com.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/pierceray/digitalpierce.com.svg?branch=master)](https://travis-ci.org/pierceray/digitalpierce.com)
 
 ## Installation
