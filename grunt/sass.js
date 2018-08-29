@@ -1,8 +1,11 @@
+var sass = require('node-sass');
+
 module.exports = {
 	options: {
+		implementation: sass,
 		sourceMap: true
 	},
-	dev:{
+	dev: {
 		files: {
 			'src/css/main.css': 'src/sass/main.scss'
 		}
