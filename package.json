@@ -16,7 +16,7 @@
   },
   "homepage": "http://digitalpierce.com",
   "devDependencies": {
-    "grunt": "1.0.3",
+    "grunt": "1.0.4",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-connect": "^2.0.0",
