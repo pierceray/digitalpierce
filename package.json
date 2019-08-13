@@ -27,7 +27,7 @@
     "grunt-gh-pages": "^3.1.0",
     "grunt-open": "^0.2.4",
     "grunt-sass": "3.0.2",
-    "load-grunt-config": "^2.0.0",
+    "load-grunt-config": "^3.0.0",
     "node-sass": "^4.12.0",
     "time-grunt": "^2.0.0"
   }
