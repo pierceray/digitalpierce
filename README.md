@@ -4,7 +4,8 @@
 
 ## Installation
 
-run `yarn` to install the dependencies
+- run `yarn` to install the dependencies
+- `yarn global add grunt-cli` to run the commands as written, or prefix the commands with `npx <command>`
 
 ## How to Use
 
