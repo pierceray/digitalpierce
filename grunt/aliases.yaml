@@ -9,9 +9,8 @@ build:
 - 'clean:dist'
 - 'jshint'
 - 'sass:dist'
-- 'autoprefixer:dist'
+- 'postcss:dist'
 - 'copy'
-- 'cssmin:dist'
 
 deploy:
 - 'build'
@@ -20,7 +19,7 @@ deploy:
 server:
 - 'clean:dev'
 - 'sass:dev'
-- 'autoprefixer:dev'
+- 'postcss:dev'
 - 'connect:dev'
 - 'open:dev'
 - 'watch'

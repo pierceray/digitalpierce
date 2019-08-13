@@ -1,6 +1,6 @@
 {
   "name": "digitalpierce.com",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "digitalpierce.com website",
   "scripts": {
     "test": "grunt test"
@@ -9,26 +9,33 @@
     "type": "git",
     "url": "https://github.com/pierceray/digitalpierce.com.git"
   },
-  "author": "Ray Pierce (@pierceray)",
+  "author": "Ray Pierce <ray@digitalpierce.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pierceray/digitalpierce.com/issues"
   },
   "homepage": "http://digitalpierce.com",
+  "browserslist": [
+    "last 2 version",
+    "ie 11"
+  ],
   "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
     "grunt": "1.0.4",
-    "grunt-autoprefixer": "^3.0.4",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-connect": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-jshint": "^2.1.0",
     "grunt-contrib-watch": "1.1.0",
     "grunt-gh-pages": "^3.1.0",
     "grunt-open": "^0.2.4",
+    "grunt-postcss": "^0.9.0",
     "grunt-sass": "3.0.2",
     "load-grunt-config": "^3.0.0",
     "node-sass": "^4.12.0",
+    "pixrem": "^5.0.0",
     "time-grunt": "^2.0.0"
-  }
+  },
+  "dependencies": {}
 }
