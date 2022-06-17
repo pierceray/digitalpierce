@@ -4,6 +4,3 @@ node_modules/
 
 # Next.js
 .next
-
-# Build paths
-out
