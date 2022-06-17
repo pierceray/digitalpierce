@@ -1,8 +1,9 @@
 .sass-cache
 .vscode
 node_modules/
-dist/
-*.css*
 
-#Next.js
+# Next.js
 .next
+
+# Build paths
+out
