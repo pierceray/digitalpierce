@@ -1,7 +1,8 @@
 .sass-cache
-.grunt
 .vscode
 node_modules/
 dist/
-src/img/sprites
 *.css*
+
+#Next.js
+.next

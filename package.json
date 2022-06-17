@@ -1,9 +1,12 @@
 {
+  "private": true,
   "name": "digitalpierce.com",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "digitalpierce.com website",
   "scripts": {
-    "test": "grunt test"
+    "dev": "next",
+    "build": "next build && next export",
+    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
   "repository": {
     "type": "git",
@@ -15,27 +18,16 @@
     "url": "https://github.com/pierceray/digitalpierce.com/issues"
   },
   "homepage": "http://digitalpierce.com",
-  "browserslist": [
-    "last 2 version",
-    "ie 11"
-  ],
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "cssnano": "^4.1.11",
-    "grunt": "1.4.0",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-connect": "^3.0.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-jshint": "^3.0.0",
-    "grunt-contrib-watch": "1.1.0",
-    "grunt-gh-pages": "^4.0.0",
-    "grunt-open": "^0.2.4",
-    "grunt-postcss": "^0.9.0",
-    "grunt-sass": "3.1.0",
-    "load-grunt-config": "^3.0.1",
-    "node-sass": "^6.0.0",
-    "pixrem": "^5.0.0",
-    "time-grunt": "^2.0.0"
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.14",
+    "prettier": "^2.7.1",
+    "sass": "^1.52.3",
+    "typescript": "^4.7.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  }
 }
