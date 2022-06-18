@@ -6,8 +6,6 @@ import "../styles/global.scss";
 const App = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
-      <meta charSet="utf-8" />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
       <title>Ray Pierce</title>
       <meta name="description" content="Hello, my name is: Ray Pierce." />
       <meta property="og:title" content="Hello, my name is: Ray Pierce." />
@@ -38,8 +36,8 @@ const App = ({ Component, pageProps }: AppProps) => (
     <div id="container">
       <Component {...pageProps} />
       <Script
-        strategy="afterInteractive"
         src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        strategy="afterInteractive"
       />
       <ins
         className="adsbygoogle homepagead"
