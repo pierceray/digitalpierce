@@ -1,4 +1,4 @@
-#CSS Coding Guidelines
+# CSS Coding Guidelines
 
 1. Naming Conventions
 
