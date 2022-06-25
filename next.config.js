@@ -6,16 +6,4 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, "sass")],
   },
-  headers: async () => [
-    {
-      source: "/:all*(js)",
-      locale: false,
-      headers: [
-        {
-          key: "Cache-Control",
-          value: "public, max-age=3600, stale-while-revalidate",
-        },
-      ],
-    },
-  ],
 };
