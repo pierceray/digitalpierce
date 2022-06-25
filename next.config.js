@@ -8,7 +8,7 @@ module.exports = {
   },
   headers: async () => [
     {
-      source: "/cached/:all*(js)",
+      source: "/:all*(js)",
       locale: false,
       headers: [
         {
