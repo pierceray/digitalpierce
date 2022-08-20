@@ -65,13 +65,13 @@ body {
   @extend %clearfix;
   background-color: $white;
   color: $black;
-  font-family: "Loved by the King", cursive;
-  font-size: 1.8em;
+  font-family: "Homemade Apple", cursive;
+  font-size: 1.1em;
   padding: 0.2em;
   text-align: center;
 
   @media only screen and (min-width: 35em) {
-    font-size: 2.47em;
+    font-size: 2em;
   }
 
   h1 {
