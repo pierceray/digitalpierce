@@ -6,21 +6,22 @@ import "../styles/global.scss";
 const App = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
-      <title>Ray Pierce</title>
+      <title>digitalpierce.com: Home of Ray Pierce</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Hello, my name is: Ray Pierce." />
       <meta property="og:title" content="Hello, my name is: Ray Pierce." />
-      <meta property="og:site_name" content="Digitalpierce.com" />
+      <meta property="og:site_name" content="digitalpierce.com" />
       <meta property="og:url" content="https://digitalpierce.com" />
       <meta
         property="og:description"
-        content="This is a little about me and what I do. Feel free to drop me a line and let me know what you think."
+        content="This is a little about me and what I do."
       />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@pierceray" />
       <meta name="twitter:title" content="Hello, my name is: Ray Pierce." />
       <meta
         name="twitter:description"
-        content="This is a little about me and what I do. Feel free to drop me a line and let me know what you think."
+        content="This is a little about me and what I do."
       />
       <meta name="twitter:url" content="https://digitalpierce.com" />
       <meta name="viewport" content="width=device-width" />
@@ -33,6 +34,7 @@ const App = ({ Component, pageProps }: AppProps) => (
       <link rel="dns-prefetch" href="https://csi.gstatic.com" />
       <link rel="dns-prefetch" href="https://tpc.googlesyndication.com" />
     </Head>
+
     <div id="container">
       <Component {...pageProps} />
       <Script
