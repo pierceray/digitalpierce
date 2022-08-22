@@ -24,7 +24,7 @@
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "@tsconfig/next": "^1.0.2",
-    "@types/node": "^16.11.49",
+    "@types/node": "^17.0.45",
     "@types/react": "^18.0.17",
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.1",
