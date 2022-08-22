@@ -50,16 +50,16 @@ const App = ({ Component, pageProps }: AppProps) => (
       ></ins>
       <Script>(adsbygoogle = window.adsbygoogle || []).push({});</Script>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=UA-5529331-1"
+        src="https://www.googletagmanager.com/gtag/js?id=G-3VVX272ZGJ"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
+          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'UA-5529331-1');
+          gtag('config', 'G-3VVX272ZGJ');
         `}
       </Script>
       <footer>&copy; 2022 Ray Pierce</footer>
