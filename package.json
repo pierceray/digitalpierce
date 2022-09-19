@@ -4,10 +4,10 @@
   "version": "0.0.6",
   "description": "digitalpierce.com website",
   "scripts": {
-    "dev": "next",
-    "lint": "eslint .",
     "build": "next build && next export",
     "deploy": "npm run build && touch out/.nojekyll",
+    "dev": "next",
+    "lint": "eslint .",
     "prepare": "husky install"
   },
   "repository": {
