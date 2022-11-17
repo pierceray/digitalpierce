@@ -14,10 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.5.1
         with:
-          node-version: "lts/*"
+          node-version: "lts/hydrogen"
           cache: "npm"
 
       - name: Build
@@ -25,8 +25,8 @@ jobs:
           npm i
           npm run deploy
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v3.9.0
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./out
