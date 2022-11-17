@@ -38,7 +38,7 @@ const App = ({ Component, pageProps }: AppProps) => (
     <div id="container">
       <Component {...pageProps} />
       <Script
-        src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3793640569591407"
         strategy="afterInteractive"
       />
       <ins
