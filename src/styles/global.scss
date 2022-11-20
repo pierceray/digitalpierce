@@ -1,6 +1,5 @@
 @import "partials/settings";
 @import "partials/normalize";
-@import "partials/helpers";
 @import "partials/adsense";
 
 /* ==========================================================================
@@ -15,80 +14,7 @@ body {
   margin: 0 auto 20px;
 }
 
-.sticker {
-  background-color: $red;
-  border: 0.31em solid $white;
-  border-radius: 2em;
-  color: $white;
-  height: 10em;
-  margin: 3em auto;
-  padding: 0 0 2em 0;
-  transform: rotate(5deg);
-  width: 16em;
-
-  @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-    width: 30em;
-    height: 16em;
-    padding: 1em 0 2em 0;
-  }
-}
-
-.stickertitle {
-  margin: 0;
-  padding: 0;
-  span {
-    display: block;
-    text-align: center;
-  }
-}
-
-#hello {
-  text-transform: uppercase;
-  font-size: 2em;
-  font-weight: bold;
-
-  @media only screen and (min-width: 35em) {
-    font-size: 2.3em;
-  }
-}
-
-#mynameis {
-  font-size: 1.7em;
-
-  @media only screen and (min-width: 35em) {
-    font-size: 1.9em;
-  }
-}
-
-.stickerbody {
-  @extend %clearfix;
-  background-color: $white;
-  color: $black;
-  font-family: "Homemade Apple", cursive;
-  font-size: 1.1em;
-  padding: 0.2em;
-  text-align: center;
-
-  @media only screen and (min-width: 35em) {
-    font-size: 2em;
-  }
-
-  h1 {
-    margin: 0;
-  }
-}
-
-#firstName {
-  transform: rotate(-10deg);
-}
-
-#lastname {
-  transform: rotate(5deg);
-}
-
 .horiznav {
-  @extend %clearfix;
   padding: 0;
   list-style: none;
   text-align: center;
@@ -138,8 +64,4 @@ footer {
   max-width: 30em;
   padding-left: 1.5em;
   margin: 3em auto 0;
-}
-
-.shadow {
-  box-shadow: 0.25em 0.25em 1em 0.125em $light-gray;
 }
