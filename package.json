@@ -26,6 +26,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
+    "@next/eslint-plugin-next": "^13.0.4",
     "@tsconfig/next": "^1.0.4",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",

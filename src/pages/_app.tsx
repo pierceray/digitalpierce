@@ -48,7 +48,9 @@ const App = ({ Component, pageProps }: AppProps) => (
         data-ad-slot="5368212779"
         data-ad-format="auto"
       ></ins>
-      <Script>(adsbygoogle = window.adsbygoogle || []).push({});</Script>
+      <Script id="googleadsense">
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </Script>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-3VVX272ZGJ"
         strategy="afterInteractive"
