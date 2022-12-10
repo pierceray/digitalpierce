@@ -74,7 +74,7 @@ const LastName = styled.span`
   display: inline-block;
   transform: rotate(3deg);
 `;
-const Logo = () => (
+const Logo: React.FC = () => (
   <Sticker>
     <Stickertitle>
       <Hello>Hello,</Hello>

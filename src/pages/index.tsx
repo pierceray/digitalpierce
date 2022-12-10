@@ -1,8 +1,9 @@
 import Logo from "@/components/Logo";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <>
+    <div id="container">
       <header>
         <Logo />
       </header>
@@ -30,7 +31,8 @@ const Index = () => {
           </li>
         </ul>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 };
 
