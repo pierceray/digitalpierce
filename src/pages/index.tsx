@@ -1,9 +1,14 @@
+import styled from "@emotion/styled";
 import Logo from "@/components/Logo";
 import Footer from "@/components/Footer";
 
+const Container = styled.div`
+  margin: 0 auto 20px;
+`;
+
 const Index = () => {
   return (
-    <div id="container">
+    <Container>
       <header>
         <Logo />
       </header>
@@ -32,7 +37,7 @@ const Index = () => {
         </ul>
       </div>
       <Footer />
-    </div>
+    </Container>
   );
 };
 
