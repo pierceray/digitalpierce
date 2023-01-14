@@ -1,3 +1,11 @@
-const Footer = () => <footer>&copy; 2022 Ray Pierce</footer>;
+import styled from "@emotion/styled";
 
-export default Footer;
+const Footer = styled.footer`
+  max-width: 30em;
+  padding-left: 1.5em;
+  margin: 3em auto 0;
+`;
+
+const MainFooter = () => <Footer>&copy; 2023 Ray Pierce</Footer>;
+
+export default MainFooter;
