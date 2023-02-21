@@ -1,7 +1,21 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "assignees": ["pierceray"],
-  "extends": ["config:base"],
+  "extends": ["config:base", ":assignAndReview(pierceray)"],
   "labels": ["dependencies"],
-  "schedule": ["before 3am"]
+  "schedule": ["before 3am"],
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch"]
+    }
+  ],
+  "lockFileMaintenance": {
+    "automerge": true
+  },
+  "patch": {
+    "automerge": true
+  },
+  "pin": {
+    "automerge": true
+  },
+  "separateMinorPatch": true
 }
