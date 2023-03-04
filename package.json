@@ -24,8 +24,8 @@
   },
   "homepage": "http://digitalpierce.com",
   "devDependencies": {
-    "@commitlint/cli": "^17.4.2",
-    "@commitlint/config-conventional": "^17.4.2",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@next/eslint-plugin-next": "^13.1.2",
