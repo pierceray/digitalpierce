@@ -29,7 +29,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@next/eslint-plugin-next": "^13.2.3",
-    "@tsconfig/next": "^1.0.5",
+    "@tsconfig/next": "^2.0.0",
     "@types/node": "^18.14.6",
     "@types/react": "^18.0.28",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
