@@ -65,7 +65,7 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
           gtag('config', 'G-3VVX272ZGJ');
         `}
       </Script>
-    </>
+    </>,
   );
 };
 
