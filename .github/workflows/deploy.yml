@@ -13,17 +13,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
       - name: Setup Node.js environment
-        uses: actions/setup-node@v3.7.0
+        uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: "npm"
-
-      - name: Build
-        run: |
-          npm i
-          npm run deploy
+      - run: npm i
+      - run: npm run lint
+      - run: npm run test
+      - run: npm run deploy
 
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3.9.3
