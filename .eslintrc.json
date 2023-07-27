@@ -12,6 +12,7 @@
     "prettier/prettier": "error"
   },
   "plugins": [
-    "prettier"
+    "prettier",
+    "testing-library"
   ]
 }
