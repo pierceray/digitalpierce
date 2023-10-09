@@ -1187,9 +1187,9 @@
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
 "@tsconfig/next@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@tsconfig/next/-/next-2.0.0.tgz#ba6acff6f4b9785691b639e672f158491df722c4"
-  integrity sha512-ip/XpFLWuUrhDkbI8ixpWxPlmWvUhQCLS5rB7nibcZUavA1Ru34Q7a5CniBM7BdHw1YlAXu40HXUn66h/A4EBQ==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@tsconfig/next/-/next-2.0.1.tgz#5c552b808fd3448701a7dcd1de80a52c393795f0"
+  integrity sha512-8Za+6fv85ipdoO1u/Xknyurab8T92LbS0/KzRB0/GHvPh3xl0L4yf5+VmSxXNwjF1uS/xLSqf+BPhfaqasCpZw==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"
@@ -1212,9 +1212,9 @@
   integrity sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==
 
 "@types/aria-query@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-5.0.1.tgz#3286741fb8f1e1580ac28784add4c7a1d49bdfbc"
-  integrity sha512-XTIieEY+gvJ39ChLcB4If5zHtPxt3Syj5rgZR+e1ctpmK8NjPf0zFqsz4JpLJT0xla9GFDKjy8Cpu331nrmE1Q==
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-5.0.2.tgz#6f1225829d89794fd9f891989c9ce667422d7f64"
+  integrity sha512-PHKZuMN+K5qgKIWhBodXzQslTo5P+K/6LqeKXS6O/4liIDdZqaX5RXrCK++LAw+y/nptN48YmUMFiQHRSWYwtQ==
 
 "@types/babel__core@^7.1.14":
   version "7.20.2"
