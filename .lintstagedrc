@@ -1,5 +1,4 @@
 {
-  "*.{ts,tsx}": [
-    "eslint --fix"
-  ]
+  "*": ["prettier --write"],
+  "*.{ts,tsx}": ["eslint --fix", "jest --findRelatedTests"]
 }
