@@ -1,9 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "extends": [
-    "plugin:@next/next/recommended",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["plugin:prettier/recommended", "next"],
   "env": {
     "es6": true,
     "node": true
@@ -11,8 +8,5 @@
   "rules": {
     "prettier/prettier": "error"
   },
-  "plugins": [
-    "prettier",
-    "testing-library"
-  ]
+  "plugins": ["prettier", "testing-library"]
 }
