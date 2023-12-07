@@ -1,3 +1,4 @@
+import { Container } from "@mui/material";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -13,11 +14,11 @@ type BasicLayoutProps = {
  */
 const BasicLayout: React.FC<BasicLayoutProps> = ({ children }) => {
   return (
-    <>
+    <Container>
       <Header />
       <main>{children}</main>
       <Footer />
-    </>
+    </Container>
   );
 };
 

@@ -1,13 +1,12 @@
 {
   "extends": "@tsconfig/next/tsconfig.json",
   "compilerOptions": {
+    "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "next-env.d.ts",
@@ -16,7 +15,5 @@
     "next.config.js",
     "jest-setup.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
