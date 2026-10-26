@@ -1490,9 +1490,9 @@
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
 "@tsconfig/next@^2.0.0":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@tsconfig/next/-/next-2.0.3.tgz#e2b273136175a85749d8ed4ec434a84c43db209d"
-  integrity sha512-b4aKvmdWnv9aUy+NStUFlefirk3SItW20OJtbi5/ue9oMRaQtUYbN5zsr7OmV3rlx6Gp6h7A82gPoCXhrNGVPQ==
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@tsconfig/next/-/next-2.0.6.tgz#e0ba358eed17da684c6e013a14e1c53fc6cd4822"
+  integrity sha512-C6eZoNyAMKv2UvzDZqcp8zXPviu6W4Ev1KUbqfmaMSZuq+tmbtTWaqxTif/yaui8WCEcRlQrHC8q9tNzBclHOw==
 
 "@types/aria-query@^5.0.1":
   version "5.0.4"
